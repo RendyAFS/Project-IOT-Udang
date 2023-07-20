@@ -47,6 +47,7 @@ def detect_bibit_udang(image_path, model):
     return detected_objects, detections
 
 
+
 if __name__ == "__main__":
     # Ganti 'D:/BISA!/OpenCvUdang/model/' dengan jalur menuju model yang telah dilatih pada bibit udang.
     model_path = 'D:/BISA!/OpenCvUdang/model/'
