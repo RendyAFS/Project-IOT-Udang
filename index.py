@@ -23,7 +23,7 @@ def load_model(model_path):
 
 def detect_bibit_udang(image_path, model):
     image_tensor = preprocess_image(image_path)
-    input_name = model.input_names[0]
+    input_name = list(model.signatures['serving_default'].inputs.keys())[0]
     detections = model(image_tensor)
 
     threshold = 0.5
@@ -45,7 +45,6 @@ def detect_bibit_udang(image_path, model):
     }
 
     return detected_objects, detections
-
 
 
 if __name__ == "__main__":
