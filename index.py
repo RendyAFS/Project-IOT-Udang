@@ -20,6 +20,7 @@ model = Sequential([
     Dense(64, activation='relu'),
     Dense(1, activation='sigmoid')  # Binary classification (udang atau bukan udang)
 ])
+#tes
 
 # Kompilasi model
 model.compile(optimizer='adam',
